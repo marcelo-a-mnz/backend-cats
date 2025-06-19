@@ -57,7 +57,7 @@ class MmModel {
         const limit = 20;
         const offset = (page - 1) * limit;
       
-        let baseQuery = `FROM hqhentais`;
+        let baseQuery = `FROM hqfofinhos`;
         const params = [];
         let whereClause = '';
         let whereCount = 1;
@@ -106,7 +106,7 @@ class MmModel {
     async hqInfos(urlAmigavel) {
         const sql = `
             SELECT titulo,tags,tagsamigaveis,qtd,resumo
-            FROM hqhentais
+            FROM hqfofinhos
             WHERE urlAmigavel = $1
         `;
 
