@@ -15,21 +15,11 @@ class MmModel {
         }
     }
 
-    async hqTags0(tag) {
-        console.log(`Retornando tag ${tag}`);
-        
-        const dataSql = "SELECT * FROM hqtags WHERE tag = $1";
-        console.log(`Query: ${dataSql}`);
-        const dados = await this.executaQuery(dataSql,[tag]);
-        console.log("dados:",dados);
-        return dados;
-    }
-
     async hqTags(tag) {
         let whereClause = '';
         const params = [];
 
-        if (tag !== undefined) {
+        if (tag !== false) {
             whereClause = ` WHERE unaccent(tag) ILIKE unaccent($1)`;
             params.push('%' + tag + '%');
         }
