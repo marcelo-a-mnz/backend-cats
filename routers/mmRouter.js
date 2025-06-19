@@ -7,7 +7,7 @@ TODO:
 Rota pesquisarHq (titulo,tag) [OK];
 Rota retornar hqs daquela tag [OK];
 Rota pra retornar tags; [OK];
-Rota para retornar hentais que possuem uma tag. [OK];
+Rota para retornar h que possuem uma tag. [OK];
 Rota novo acesso HQ (com mecanismo anti-bot) (ou talvez seja melhor usar analytics);
 Melhorar rota all-hqs, adcionando a quantidade total na resposta para ser trabalhada na paginação no front [OK];
 
