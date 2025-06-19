@@ -63,7 +63,7 @@ class MmModel {
         }
       
         const dataSql = `
-          SELECT titulo, urlAmigavel, urlCapa, novo
+          SELECT titulo, urlAmigavel, urlCapa
           ${baseQuery}
           ${whereClause}
           ORDER BY id DESC
