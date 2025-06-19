@@ -19,7 +19,7 @@ class MmModel {
         let whereClause = '';
         const params = [];
 
-        if (tag !== false) {
+        if (tag !== undefined) {
             whereClause = ` WHERE unaccent(tag) ILIKE unaccent($1)`;
             params.push('%' + tag + '%');
         }
